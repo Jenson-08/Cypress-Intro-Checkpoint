@@ -30,7 +30,7 @@ function randEmail() {
 
 describe('Register', () => {
     it('Register', () => {
-      // Visitar la página web
+      // Visit the webpage
         cy.visit('https://reverb.com/');
 
         cy.get('.rc-button.rc-button--filled.rc-button--main.rc-button--medium')
