@@ -35,9 +35,8 @@ describe('Prueba de API de Artículos', () => {
             expect(category).to.have.property('updated_at').that.is.a('string').and.is.equal('2016-12-14T16:21:42-06:00');
             expect(category).to.have.property('slug').that.is.a('string').and.is.equal('news-and-reviews');
           });
-
-          // Agrega más expectativas según la estructura de cada artículo en la lista
         });
       });
+    });
   });
-});
+          // Agrega más expectativas según la estructura de cada artículo en la lista
