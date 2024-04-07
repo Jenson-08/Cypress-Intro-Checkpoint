@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-describe('Prueba de API de Artículos', () => {
+describe('API Test of articles', () => {
   it('API Test', () => {
     // API Request
     cy.request({
