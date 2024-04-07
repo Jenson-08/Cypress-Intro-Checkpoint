@@ -2,7 +2,7 @@
 
 describe('Login and logout', () => {
     it('Login and logout', () => {
-      // Visitar la página web
+      // Visit the webpage
         cy.visit('https://reverb.com/');
 
         cy.get('.rc-button.rc-button--filled.rc-button--main.rc-button--medium')
