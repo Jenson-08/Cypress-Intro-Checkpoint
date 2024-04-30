@@ -8,15 +8,17 @@ describe('Search products and select one', () => {
             .type('guitars')
             .should('have.value', 'guitars')
             .type("{enter}")
+           
             .then(() => {
-                //cy.wait(2000);
+                // Una vez que se completa la búsqueda, cerramos el modal
                 cy.closeModal();
                 
-                //assert
-                cy.get('ul.rc-listing-grid li')
-                    .should("exist")
+                // Después de cerrar el modal, buscamos el primer elemento de la lista y hacemos scroll hacia él
+                cy.get('ul.rc-listing-grid li').first()
+                    .scrollIntoView()
                     .should('be.visible')
                     .click();
             });
+           
     });
 });
