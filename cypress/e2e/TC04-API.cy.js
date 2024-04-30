@@ -37,4 +37,8 @@ describe('API Test of articles', () => {
       });
     });
   });
+<<<<<<< HEAD
 
+=======
+          
+>>>>>>> 34d49155bfc77e416de354da571f478d338d5e5b

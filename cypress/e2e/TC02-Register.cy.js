@@ -1,7 +1,13 @@
 describe('Register', () => {
+<<<<<<< HEAD
   it('Register', () => {
     cy.fixture('credentials.json').then(registerData => {
       const { name, email, validateRegister, nameRegister } = registerData;
+=======
+    it('Register', () => {
+      // Visit the webpage
+        cy.visit('https://reverb.com/');
+>>>>>>> 34d49155bfc77e416de354da571f478d338d5e5b
 
       cy.navigate();
       
@@ -35,6 +41,11 @@ describe('Register', () => {
             
           });
         });
+<<<<<<< HEAD
       });
     });
   });
+=======
+});
+    
+>>>>>>> 34d49155bfc77e416de354da571f478d338d5e5b
