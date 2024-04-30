@@ -2,12 +2,8 @@
 
 describe('Search products and select one', () => {
     it('Search a product and select one', () => {
-      
         cy.navigate();
 
-        //cy.closeModal();
-        
-        // Find the searchbar and type a product
         cy.get('.site-search__controls__input')
             .type('guitars')
             .should('have.value', 'guitars')
@@ -20,7 +16,6 @@ describe('Search products and select one', () => {
                 cy.get('ul.rc-listing-grid li')
                     .should("exist")
                     .should('be.visible')
-                    .first()
                     .click();
             });
     });
