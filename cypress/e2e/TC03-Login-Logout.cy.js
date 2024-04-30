@@ -2,11 +2,6 @@
 
 describe('Login and logout', () => {
     it('Login and logout', () => {
-<<<<<<< HEAD
-=======
-      // Visit the webpage
-        cy.visit('https://reverb.com/');
->>>>>>> 34d49155bfc77e416de354da571f478d338d5e5b
 
       cy.fixture('credentials.json').then(registerData => {
          const { name, email, validateRegister } = registerData;
@@ -46,13 +41,6 @@ describe('Login and logout', () => {
         cy.get('.rc-button.rc-button--filled.rc-button--main.rc-button--medium')
         .should('exist')
         
-<<<<<<< HEAD
       });
    });
  });
-=======
-      
-    });
-  });
-  
->>>>>>> 34d49155bfc77e416de354da571f478d338d5e5b
