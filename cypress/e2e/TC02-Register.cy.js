@@ -1,4 +1,4 @@
-
+/// <reference types="Cypress" />
 describe('Register', () => {
   it('Register', () => {
     cy.fixture('credentials.json').then(registerData => {
